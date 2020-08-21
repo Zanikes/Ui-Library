@@ -50,7 +50,7 @@ function LoadLib()
     Title.Size = UDim2.new(0, 200, 0, 40)
     Title.ZIndex = 3
     Title.Font = Enum.Font.GothamBold
-    Title.Text = "To add a title, after the loadstring, run the function Title(), with a new title inside the function"
+    Title.Text = "No title set, to find how to add a title, look at the Zan Lib docs"
     Title.TextColor3 = Color3.fromRGB(77, 166, 255)
     Title.TextScaled = true
     Title.TextSize = 14.000
@@ -254,7 +254,7 @@ function LoadLib()
         end
     end)
 
-    function Title(Name)
+    function library:Title(Name)
         Title.Text = tostring(Name)
     end
 
