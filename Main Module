@@ -701,15 +701,15 @@ function LoadLib()
                 if Tog == false then
                     Tog = true
                     ToggleButton.Text = utf8.char(10003)
-                    pcall(Callback, Tog)
                     game:GetService("TweenService"):Create(ToggleButtonRound, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(0,255,0)}):Play()
                     ToggleButton:TweenPosition(UDim2.new(1,-55,0,3), 'In', 'Linear', 0.1)
+                    pcall(Callback, Tog)
                 else
                     Tog = false
                     ToggleButton.Text = "X"
-                    pcall(Callback, Tog)
                     game:GetService("TweenService"):Create(ToggleButtonRound, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255,0,0)}):Play()
                     ToggleButton:TweenPosition(UDim2.new(0,5,0,3), 'In', 'Linear', 0.1)
+                    pcall(Callback, Tog)
                 end
                 
                 local c = Sample2:Clone()
